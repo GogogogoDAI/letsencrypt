@@ -34,9 +34,16 @@
 
 ### 2. 下载并运行部署脚本
 
-在服务器终端执行以下命令：
+选择以下任意一种方式下载脚本：
 
 ```bash
+# 方式一：使用 curl 下载
+curl -sSL -o deploy_cert_auto.sh [https://raw.githubusercontent.com/GogogogoDAI/letsencrypt/refs/heads/main/deploy_cert_auto.sh](https://raw.githubusercontent.com/GogogogoDAI/letsencrypt/refs/heads/main/deploy_cert_auto.sh)
+
+# 方式二：使用 wget 下载
+wget -O deploy_cert_auto.sh [https://raw.githubusercontent.com/GogogogoDAI/letsencrypt/refs/heads/main/deploy_cert_auto.sh](https://raw.githubusercontent.com/GogogogoDAI/letsencrypt/refs/heads/main/deploy_cert_auto.sh)
+
+# 赋予执行权限并运行
 chmod +x deploy_cert_auto.sh
 bash deploy_cert_auto.sh
 ```
