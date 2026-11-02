@@ -34,18 +34,16 @@
 
 ### 2. 下载并运行部署脚本
 
-选择以下任意一种方式下载脚本：
+在服务器终端点击右上角**一键复制**下方任意一条单行命令并运行：
 
+**方式一：使用 wget 一键下载并运行（推荐）**
 ```bash
-# 方式一：使用 curl 下载
-curl -sSL -o deploy_cert_auto.sh [https://raw.githubusercontent.com/GogogogoDAI/letsencrypt/refs/heads/main/deploy_cert_auto.sh](https://raw.githubusercontent.com/GogogogoDAI/letsencrypt/refs/heads/main/deploy_cert_auto.sh)
+wget -O deploy_cert_auto.sh [https://raw.githubusercontent.com/GogogogoDAI/letsencrypt/refs/heads/main/deploy_cert_auto.sh](https://raw.githubusercontent.com/GogogogoDAI/letsencrypt/refs/heads/main/deploy_cert_auto.sh) && chmod +x deploy_cert_auto.sh && bash deploy_cert_auto.sh
+```
 
-# 方式二：使用 wget 下载
-wget -O deploy_cert_auto.sh [https://raw.githubusercontent.com/GogogogoDAI/letsencrypt/refs/heads/main/deploy_cert_auto.sh](https://raw.githubusercontent.com/GogogogoDAI/letsencrypt/refs/heads/main/deploy_cert_auto.sh)
-
-# 赋予执行权限并运行
-chmod +x deploy_cert_auto.sh
-bash deploy_cert_auto.sh
+**方式二：使用 curl 一键下载并运行**
+```bash
+curl -sSL -o deploy_cert_auto.sh [https://raw.githubusercontent.com/GogogogoDAI/letsencrypt/refs/heads/main/deploy_cert_auto.sh](https://raw.githubusercontent.com/GogogogoDAI/letsencrypt/refs/heads/main/deploy_cert_auto.sh) && chmod +x deploy_cert_auto.sh && bash deploy_cert_auto.sh
 ```
 
 ### 3. 根据提示输入参数
